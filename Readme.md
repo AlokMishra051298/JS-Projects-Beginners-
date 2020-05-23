@@ -1,1 +1,3 @@
 Hello, This repo. contains the JS projects for beginner.
+
+> [Project1: Torch](https://github.com/AlokMishra051298/JS-Projects-Beginners-/tree/Torch/Torch)
