@@ -1,0 +1,17 @@
+.dark, .light{
+  background: black;
+  text-align: center;
+}
+.light{
+  background-color: white;
+}
+.btn-on, .btn-off{
+  width: 200px;
+  height: 100px;
+  margin:40px;
+}
+
+.btn-off{
+  background-color: black;
+  color: white;
+}
