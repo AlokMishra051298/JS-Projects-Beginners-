@@ -1,11 +1,13 @@
-#Build the navigation menu.
+# [Codepen Link](https://codepen.io/alokmishra051298/full/mdeoWoy)
+
+# Build the navigation menu.
 This will dynamically create a navigation menu based on the sections of the page. This can be a particularly useful trick when you begin working with content management systems or APIs when you are uncertain of where the items will be.
 * Are you listening for an event for the navigation to build?
 * Where are you placing the navigation?
 * Where is the text for each navigation item coming from and where are you anchoring to?
 * How are you going to add each navigation item to your menu? (Hint: there are several ways to do this. Do some research to figure out which makes the most sense for your situation. Performance? Clarity?).
 
-#Add functionality to distinguish the section in view.
+# Add functionality to distinguish the section in view.
 While navigating through the page, the section that is active in the viewport/closest to the top should be distinguished from the other sections.
 * Are you listening for an event for sections to become active?
 * How are you going to test which section should be highlighted?
