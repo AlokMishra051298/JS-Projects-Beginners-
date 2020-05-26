@@ -101,7 +101,7 @@ section {
     z-index: 5;
 }
 /* Scroll up */
-#scroll__up{
+.scroll__up{
     display: inline-block;
     background-color: #FF9800;
     width: 50px;
@@ -109,13 +109,29 @@ section {
     text-align: center;
     border-radius: 4px;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 15px;
+    right: 15px;
     transition: background-color .3s,
     opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
+    border: 2px solid;
+}
+.scroll__up::after{
+    content: "\21E7";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#btn.show__btn{
+    opacity: 1;
+    border: 2px solid red;
+    visibility: visible;
 }
 /* Footer Styles */
 .page__footer {

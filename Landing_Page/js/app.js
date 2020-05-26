@@ -63,6 +63,31 @@ function linkToActive(links, id){
         }
     });
 }
+
+// ----------------------------
+function scrollToUp(){
+    let btn = document.querySelector(".scroll__up");
+    let main = document.querySelector("main").getBoundingClientRect();
+    console.log(main.top);
+    if(main.top<=0){
+        console.log("I'm in");
+        btn.classList.add("show__btn");
+    }
+    else{
+        btn.classList.remove("show__btn");
+    }
+    btn.addEventListener("click", event =>{
+        event.preventDefault();
+        window.scrollTo({
+            behavior:'smooth',
+            left:0,
+            top: 0
+        });//window
+    }
+);//event Listener
+}
+
+
 // Add class 'active' to section when near top of viewport
 function setSectionAsActive(sections){
     var links = document.querySelectorAll('.menu__link')
@@ -76,8 +101,10 @@ function setSectionAsActive(sections){
           else {
               sec.classList.remove("your-active-class");
           }
+          scrollToUp();
       }, false);
     }
+    // scrollToUp();
 }
 // Scroll to anchor ID using scrollTO event
 function smoothScroll() {

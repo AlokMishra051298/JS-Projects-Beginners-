@@ -20,3 +20,6 @@ Clicking on a navigation item should scroll to the appropriate section of the pa
 * There is a default event occurring that we need to stop. How?
 * If you don’t recall how HTML page anchors work, [read more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Examples) to figure out which variables you should set.
 * There are several javascript methods for scrolling. Which seems like it may be the most simple?
+
+# Extra Work
+* Added scroll up button
