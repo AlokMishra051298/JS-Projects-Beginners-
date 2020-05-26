@@ -68,9 +68,8 @@ function linkToActive(links, id){
 function scrollToUp(){
     let btn = document.querySelector(".scroll__up");
     let main = document.querySelector("main").getBoundingClientRect();
-    console.log(main.top);
     if(main.top<=0){
-        console.log("I'm in");
+        // console.log("I'm in");
         btn.classList.add("show__btn");
     }
     else{
