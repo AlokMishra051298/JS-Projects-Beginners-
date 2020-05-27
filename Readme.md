@@ -1,3 +1,3 @@
-Hello, This repo. contains the JS projects for beginner.
+[CodePen Link](https://codepen.io/alokmishra051298/full/wvKNKGN)
 
-> [Project1: Torch](https://github.com/AlokMishra051298/JS-Projects-Beginners-/tree/Torch/Torch)
+> **Note:** You will find some difference in code provided here and of CodePen. Code present at github also contains sound files which played while changing color but at CodePen only code to change color is present.
