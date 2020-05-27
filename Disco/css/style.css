@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+/*   border: 1px solid; */
+}
+body{
+  font-family: monospace;
+  padding: 40vh 10% 40vh 10%;
+}
+div{
+  text-align: center;
+}
+
+button{
+  width: 150px;
+  height: 75px;
+  margin: 20px;
+}
+
+p{
+  font-size: 2rem;
+  font-weight: 400;
+  margin-left: -50px;
+}
+
+span{
+  text-transform: uppercase;
+}
