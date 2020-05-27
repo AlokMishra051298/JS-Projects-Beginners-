@@ -25,3 +25,4 @@ Clicking on a navigation item should scroll to the appropriate section of the pa
 
 ## Extra Work
 * Added scroll up button
+* Collapsed Section [Reference](https://inclusive-components.design/collapsible-sections/)

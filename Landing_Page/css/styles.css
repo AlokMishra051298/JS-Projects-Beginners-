@@ -33,13 +33,35 @@ h1 {
     }
 }
 
-h2 {
+h2 button{
+    background-color: Transparent;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline: none;
     border-bottom: 1px solid #cc1;
     font-family: 'Oxygen', Sans-Serif;
-    font-size: 3em;
+    font-size: 2.5em;
     color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5em 0;
 }
 
+button svg {
+  height: 1em;
+  margin-left: 0.5em;
+}
+
+[aria-expanded="true"] .vert {
+  display: none;
+}
+
+[aria-expanded] rect {
+  fill: currentColor;
+}
 p {
     line-height: 1.6em;
     color: #eee;
@@ -50,6 +72,7 @@ main {
     margin: 10vh 1em 10vh;
 }
 
+
 .main-hero {
     min-height: 40vh;
     padding-top: 3em;
@@ -57,6 +80,7 @@ main {
 
 section {
     position: relative;
+    margin-bottom: 50px;
     min-height: 80vh;
 }
 
@@ -152,6 +176,10 @@ section {
     text-align: left;
 }
 
+.collasped__sec{
+  postition: relative;
+  min-height: 30vh;
+}
 @media only screen and (min-width: 35em){
     .landing__container {
         max-width: 50em;

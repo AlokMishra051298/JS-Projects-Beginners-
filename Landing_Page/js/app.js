@@ -46,7 +46,7 @@ function buildNavbar(sections) {
         var a = document.createElement('a');
         setElementAttributes(a, "href", '#' + sec.getAttribute("id"));
         setElementAttributes(a, "class", "menu__link");
-        a.innerHTML = heading.innerHTML;
+        a.innerHTML = heading.querySelector("button").textContent;
         list.appendChild(a);
         navList.appendChild(list);
     }
@@ -68,6 +68,7 @@ function linkToActive(links, id){
 function scrollToUp(){
     let btn = document.querySelector(".scroll__up");
     let main = document.querySelector("main").getBoundingClientRect();
+    // console.log(main.top);
     if(main.top<=0){
         // console.log("I'm in");
         btn.classList.add("show__btn");
@@ -92,7 +93,6 @@ function setSectionAsActive(sections){
     var links = document.querySelectorAll('.menu__link')
     for (let sec of sections) {
       window.addEventListener('scroll', function (event) {
-              // if(sec.getAttribute('id')===ref && isInViewport(sec)){
           if(isInViewport(sec)){
               sec.classList.add("your-active-class");
               linkToActive(links, sec.getAttribute('id'));
@@ -124,6 +124,21 @@ function smoothScroll() {
     });
 }
 
+function collaspedSection(){
+  let headBtn = document.querySelectorAll("button.collasped__btn");
+  headBtn.forEach(btn=>{
+    // console.log(btn);
+    btn.onclick=()=>{
+      btn.setAttribute("aria-expended","true");
+      let expanded = btn.getAttribute("aria-expanded")==="true"|| false;
+      let target = btn.parentElement.nextElementSibling;
+      // console.log(target);
+      btn.setAttribute('aria-expanded', !expanded)
+      target.hidden = expanded;
+    };
+  });//headBtn
+}
+
 /**
  * End Main Functions
  * Begin Events
@@ -132,12 +147,11 @@ function smoothScroll() {
 
 // Build menu
 buildNavbar(sections);
-
+collaspedSection();
 // Scroll to section on link click
 smoothScroll();
 // Set sections as active
 setSectionAsActive(sections);
-
 //------------------EXTRA WORK------------
 /**
 If you want to only section attached with clicked navbar item looks different then follow this:
